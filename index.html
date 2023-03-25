@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/button.css">
+  <script src="javascript/calculator.js" defer></script>
+  <script src="javascript/nav.js" defer></script>
+  <title>Javascript Calculator</title>
+</head>
+
+<body>
+  <div id="rootVegetables"></div>
+  <table class="center" id="courses">
+    <tr>
+      <h1>
+        <th>Course</th>
+        <th>Credit Hourse</th>
+        <th>Grades</th>
+    </tr>
+    <tr>
+      <td>WEb Enginering</td>
+      <td>2</td>
+      <td>
+        <select id="gradeSelect0" onchange="addGrade('WEb Enginering',this.value)">
+          <option value="" selected>Select Garde</option>
+        </select>
+      </td>
+    <tr>
+      <td>WEb Enginering Lab</td>
+      <td>1</td>
+      <td>
+        <select id="gradeSelect1" onchange="addGrade('WEb Enginering Lab',this.value)">
+          <option value="" selected>Select Garde</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Visual Programming</td>
+      <td>2</td>
+      <td>
+        <select id="gradeSelect2" onchange="addGrade('Visual Programming',this.value)">
+          <option value="" selected>Select Garde</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>VP Lab</td>
+      <td>1</td>
+      <td>
+        <select id="gradeSelect3" onchange="addGrade('VP Lab',this.value)">
+          <option value="" selected>Select Garde</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>DCCN</td>
+      <td>3</td>
+      <td>
+        <select id="gradeSelect4" onchange="addGrade('DCCN',this.value)">
+          <option value="" selected>Select Garde</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>DCCN Lab</td>
+      <td>1</td>
+      <td>
+        <select id="gradeSelect5" onchange="addGrade('DCCN Lab',this.value)">
+          <option value="" selected>Select Garde</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Computer Architecture</td>
+      <td>3</td>
+      <td>
+        <select id="gradeSelect6" onchange="addGrade('Computer Architecture',this.value)">
+          <option value="" selected>Select Garde</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Numerical Method</td>
+      <td>3</td>
+      <td>
+        <select id="gradeSelect7" onchange="addGrade('Numerical Method',this.value)">
+          <option value="" selected>Select Garde</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Theory of Automata</td>
+      <td>2</td>
+      <td>
+        <select id="gradeSelect8" onchange="addGrade('Theory of Automata',this.value)">
+          <option value="" selected>Select Garde</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Total Credit Hours</td>
+      <td colspan="2" id="tch"></td>
+    </tr>
+    <tr>
+      <td>Your GPA is </td>
+      <td style="font-weight:bold;" colspan="2" id="gpa"></td>
+    </tr>
+  </table>
+  <div class="parent">
+    <button type="button" onclick="cl=true;calculateGpa();" 
+    class="btn-gradient-1">Calculate Your GPA</button>
+
+  </div>
+  <div style="width: 50%;margin:2rem;color: crimson;">
+    <div id="error"></div>
+    <ul id="errorsList">
+    </ul>
+  </div>
+  <div style="margin: 3rem;" id="obj"></div>
+  <div id="ff"></div>
+
+</body>
+
+</html>

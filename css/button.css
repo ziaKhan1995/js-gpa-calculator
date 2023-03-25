@@ -1,0 +1,28 @@
+
+.btn-gradient-1 {
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+  }
+  
+  
+  /* demo stuff */
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 10%;
+    align-items: center;
+    min-height: 9vh;
+  }
+  
+  .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }

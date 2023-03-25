@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#courses {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#courses td,
+#courses th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    overflow: hidden;
+}
+
+#courses tr {
+    background-color: #f2f2f2;
+}
+
+#courses th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+select {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    border: solid grey 1px;
+    padding: 10px;
+    margin: -5px -20px -5px -5px;
+    width: 100%;
+}
+#gpa{
+    font-weight: bold;
+    border: 1.5px solid #c7c6c6 !important;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
